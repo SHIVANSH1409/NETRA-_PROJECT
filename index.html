@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NERTA ROBOT MONITOTING SYSTEM</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <header class="topbar">
@@ -28,7 +29,14 @@
             <strong id="clock">--:--:--</strong>
         </div>
         <bUtton id="dispatch-open" type="bUtton"> DISPATCH MISSION</bUtton>
-
+<script>
+    function updateClock() {
+            const now = new Date();
+            document.getElementById('clock').innerText = now.toLocaleTimeString();
+        }
+        setInterval(updateClock, 1000);
+        updateClock(); 
+</script>
         
 
     </header> 

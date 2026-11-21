@@ -34,5 +34,29 @@ body{
 }
 nav a{
     text-decoration: aliceblue;
+    color: #aebed3;
+    font-size: 14px;
     
+}
+nav a:hover{
+    color: #54a5ff;
+
+}
+.header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #39d6a0;
+}
+.online-dot{
+    width: 9px;
+    height: 9px;
+    background-color: #7cbc1c;
+    border-radius: 50%;
+}
+#clock{
+    font-size: 14px;
+    color: #54a5ff;
+    #margin-left: 10px;
+    font-family: moonspace;
 }
